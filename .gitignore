@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# IntelliJ
+.idea/
+*.iml
+target/
+
+# VSCode
+.vscode/
+
+# Java/Spring
+*.class
+*.jar
+build/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node/JS
+node_modules/
+dist/
+
+# 로그/임시파일
+*.log
