@@ -253,11 +253,11 @@
 > 선행 그룹(1~5번)만 빠르게 떼고, 나머지는 실전(주말 웹개발)에서 필요할 때 학습
 
 ### 선행 학습 (지금 바로, 3~5일 내 완료)
-- [x] 1. Git 기본 개념 — 버전관리, 로컬 vs 원격 저장소, working directory/staging area/repository 3단계 구조
+- [ ] 1. Git 기본 개념 — 버전관리, 로컬 vs 원격 저장소, working directory/staging area/repository 3단계 구조
 - [ ] 2. 기본 명령어 (로컬) — `git init`, `add`, `commit`, `status`, `log`, `diff`
 - [ ] 3. 브랜치(Branch) 기초 — `git branch`, `checkout/switch`, `merge` 기초
 - [ ] 4. `.gitignore` 활용 — 민감정보/빌드 산출물 제외 관리
-- [x] 5. 원격 저장소 연동 — `git remote`, `push`, `pull`, `clone`, GitHub 활용 ✅ 2026-07-20 완료 (clone/pull/push 흐름 실습, Credential Manager 연동)
+- [ ] 5. 원격 저장소 연동 — `git remote`, `push`, `pull`, `clone`, GitHub 활용 ✅ 2026-07-20 완료 (clone/pull/push 흐름 실습, Credential Manager 연동)
 
 ### 심화 (실전 중 필요할 때 학습)
 - [ ] 6. 충돌(Conflict) 해결 — merge conflict 재현 및 해결
