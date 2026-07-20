@@ -12,4 +12,4 @@
   - GitHub 인증 이슈(Bad credentials) 발생 → PAT(Personal Access Token) 발급으로 해결
   - 빈 폴더가 Git에 추적 안 되는 문제 확인 → `.gitkeep` 파일로 해결
   - GitHub 웹에서 전체 폴더 구조 최종 반영 확인 완료
-- 다음에 이어갈 것: 다음 세션부터 실제 학습 시작 — `01-network` 트랙 1번 항목(OSI 7계층/TCP-IP 4계층)부터, `notes/`에 개념 정리 파일 첫 생성
+- 다음에 이어갈 것: 컴퓨터구조 Track 
