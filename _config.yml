@@ -1,28 +1,15 @@
-# 사이트 전체 이름(탭에 렌더링)
 title: Sanghyeon Tech Wiki
-
-#사이트 설명(SEO에 영향주는 메타 요소)
-description: 인프라 엔지니어 학습 기록 - 네트워크, 리눅스, 클라우드, 컨테이너/오케스트레이션, CI/CD 등
-
-# 테마 지정
+description: 비전공자에서 인프라 엔지니어로. 서버, 네트워크, 클라우드부터 자동화, 웹개발까지 매일 배우고 부딪히고 정리하는 IT 기술 블로그입니다.
 theme: just-the-docs
-
-# 사이트 전체 디자인(다른 테마로 변경 희망시 바꿀 것)
 remote_theme: just-the-docs/just-the-docs
 
-# 사이드바에 표시될 폴더/파일 인식 방식
 color_scheme: dark
 
-# GitHub 저장소 정보 (본인 것으로 이미 맞음)
-# 사이트 배포 도메인
 url: "https://vivatubeh.github.io"
-# 도메인 뒤에 붙는 저장소 경로(레포 이름과 일치해야 함)
 baseurl: "/tech-wiki"
 
-# 검색 기능 (Just the Docs 내장 검색, 켜두면 편함)
 search_enabled: true
 
-# 상단에 "Edit this page on GitHub" 링크 (선택, 편의상 추천)
 gh_edit_link: true
 gh_edit_link_text: "이 페이지를 GitHub에서 편집"
 gh_edit_repository: "https://github.com/VivatubeH/tech-wiki"
