@@ -13,3 +13,11 @@ gh_edit_link: true
 gh_edit_link_text: "이 페이지를 GitHub에서 편집"
 gh_edit_repository: "https://github.com/VivatubeH/tech-wiki"
 gh_edit_branch: "main"
+
+# 사이트에 절대 노출되면 안 되는 개인 관리용 문서/기록
+exclude:
+  - README.md
+  - roadmap.md
+  - learning_principles.md
+  - progress-log.md
+  - daily-log/
