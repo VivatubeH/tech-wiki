@@ -14,7 +14,7 @@ nav_order: 0
 - [02. 컴퓨터구조]({{ site.baseurl }}/02-computer-architecture/)
 - [03. 리눅스]({{ site.baseurl }}/03-linux/)
 - [04. 윈도우]({{ site.baseurl }}/04-windows/)
-- [05. 자동화 (Python/Shell)]({{ site.baseurl }}/05-automation-python/)
+- [05. 자동화 (Python/Shell)]({{ site.baseurl }}/05-automation-python-shell/)
 - [06. 보안]({{ site.baseurl }}/06-security/)
 - [07. AWS]({{ site.baseurl }}/07-aws/)
 - [08. 가상화/컨테이너/오케스트레이션]({{ site.baseurl }}/08-virtualization-docker/)
@@ -28,9 +28,3 @@ nav_order: 0
 ## 자격증
 
 - [CCNA / RHCSA / AWS SAA]({{ site.baseurl }}/certifications/)
-
-## 기타 문서
-
-- [로드맵]({{ site.baseurl }}/roadmap/)
-- [학습 진행 원칙]({{ site.baseurl }}/learning_principles/)
-- [진행 기록]({{ site.baseurl }}/progress-log/)
