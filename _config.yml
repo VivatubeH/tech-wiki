@@ -2,7 +2,7 @@ title: Sanghyeon Tech Wiki
 description: 비전공자에서 인프라 엔지니어로. 서버, 네트워크, 클라우드부터 자동화, 웹개발까지 매일 배우고 부딪히고 정리하는 IT 기술 블로그입니다.
 remote_theme: just-the-docs/just-the-docs
 
-color_scheme: custom
+color_scheme: dark
 
 url: "https://vivatubeh.github.io"
 baseurl: "/tech-wiki"
