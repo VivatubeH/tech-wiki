@@ -6,6 +6,7 @@
   <title>Tech Wiki 글쓰기</title>
 </head>
 <body>
+  <script>window.CMS_MANUAL_INIT = true;</script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
     CMS.registerEditorComponent({
@@ -38,6 +39,8 @@
         return '<span style="color: ' + obj.color + ';">' + obj.text + '</span>';
       }
     });
+
+    CMS.init();
   </script>
 </body>
 </html>
