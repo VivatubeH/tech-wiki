@@ -1,60 +1,130 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-// ===== 폰트 =====
+// ===== 컬러 팔레트 (다크 기본 / 라이트 토글) =====
+:root {
+  --tw-bg: #1b1c20;
+  --tw-bg-side: #1f2024;
+  --tw-bg-code: #26282f;
+  --tw-bg-code-inline: #2a2c33;
+  --tw-border: #34353a;
+  --tw-text: #dcd9d2;
+  --tw-heading: #f2efe9;
+  --tw-accent: #5fb3a3;
+  --tw-accent-soft: rgba(95, 179, 163, 0.4);
+  --tw-accent-contrast: #14161a;
+  --tw-code-inline-text: #e8a87c;
+  --tw-scrollbar: #45474e;
+}
+
+html[data-theme="light"] {
+  --tw-bg: #fbfaf7;
+  --tw-bg-side: #f4f2ec;
+  --tw-bg-code: #f2f1eb;
+  --tw-bg-code-inline: #eeebe2;
+  --tw-border: #e3ddd0;
+  --tw-text: #3c3a35;
+  --tw-heading: #26241f;
+  --tw-accent: #2f8d7a;
+  --tw-accent-soft: rgba(47, 141, 122, 0.35);
+  --tw-accent-contrast: #ffffff;
+  --tw-code-inline-text: #b25f2c;
+  --tw-scrollbar: #d8d2c4;
+}
+
+// ===== 폰트 & 기본 레이아웃 =====
 body, .side-bar, .main-content {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .main-content {
-  line-height: 1.8;
+  line-height: 1.85;
   font-size: 16px;
+  max-width: 850px;
+  padding-top: 2.5rem !important;
+  padding-bottom: 4rem !important;
 }
 
-// ===== 배경/텍스트 색 (다크 톤 완화) =====
+.main-content p, .main-content ul, .main-content ol {
+  margin-bottom: 1.3em;
+}
+
+// ===== 배경/텍스트 색 =====
 body, .main {
-  background-color: #1b1c20 !important;
+  background-color: var(--tw-bg) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .side-bar {
-  background-color: #1f2024 !important;
+  background-color: var(--tw-bg-side) !important;
+  border-right: 1px solid var(--tw-border);
 }
 
 .main-content, .main-content p, .main-content li {
-  color: #dcd9d2 !important;
+  color: var(--tw-text) !important;
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
-  color: #f2efe9 !important;
+  color: var(--tw-heading) !important;
 }
 
-// ===== 링크 & 소제목 포인트 (틸 색상) =====
+.main-content h1 {
+  font-weight: 700;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.01em;
+}
+
+// ===== 링크 & 소제목 포인트 =====
 .main-content a {
-  color: #5fb3a3;
+  color: var(--tw-accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(95, 179, 163, 0.4);
+  border-bottom: 1px solid var(--tw-accent-soft);
+  transition: border-color 0.15s ease;
 }
 
 .main-content a:hover {
-  border-bottom-color: #5fb3a3;
+  border-bottom-color: var(--tw-accent);
 }
 
 .main-content h2 {
-  border-left: 4px solid #5fb3a3;
+  border-left: 4px solid var(--tw-accent);
   padding-left: 12px;
-  margin-top: 2.5em;
+  margin-top: 2.8em;
+  margin-bottom: 0.7em;
 }
 
 .main-content h3 {
-  color: #5fb3a3 !important;
+  color: var(--tw-accent) !important;
+  margin-top: 2em;
+}
+
+// ===== 버튼 (nav-list, aux-nav 등) =====
+.btn, a.btn {
+  border-radius: 6px;
+  border: 1px solid var(--tw-accent-soft);
+  color: var(--tw-accent);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover, a.btn:hover {
+  background-color: var(--tw-accent);
+  color: var(--tw-accent-contrast);
+  border-color: var(--tw-accent);
+}
+
+// ===== 태그/라벨류 (label, .label) =====
+.label, .label-blue, .label-green, .label-purple, .label-red, .label-yellow {
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 500;
 }
 
 // ===== 코드블록 =====
 .main-content pre.highlight,
 .main-content .highlight pre {
-  background-color: #26282f !important;
+  background-color: var(--tw-bg-code) !important;
   border-radius: 8px;
-  border: 1px solid #34353a;
+  border: 1px solid var(--tw-border);
   padding: 16px 20px;
   line-height: 1.6;
   font-size: 0.88em;
@@ -66,22 +136,58 @@ body, .main {
   height: 8px;
 }
 .main-content pre.highlight::-webkit-scrollbar-thumb {
-  background-color: #45474e;
+  background-color: var(--tw-scrollbar);
   border-radius: 4px;
 }
 
 // ===== 인라인 코드 =====
 .main-content p code,
 .main-content li code {
-  background-color: #2a2c33;
-  color: #e8a87c;
+  background-color: var(--tw-bg-code-inline);
+  color: var(--tw-code-inline-text);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.85em;
-  border: 1px solid #34353a;
+  border: 1px solid var(--tw-border);
   font-family: "JetBrains Mono", "D2Coding", monospace !important;
 }
 
 .main-content img {
   border-radius: 8px;
+}
+
+// ===== 라이트/다크 토글 버튼 =====
+#tw-theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--tw-border);
+  background-color: var(--tw-bg-side);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+
+#tw-theme-toggle:hover {
+  transform: scale(1.08);
+}
+
+#tw-theme-toggle .tw-icon-dark {
+  display: none;
+}
+
+html[data-theme="light"] #tw-theme-toggle .tw-icon-light {
+  display: none;
+}
+
+html[data-theme="light"] #tw-theme-toggle .tw-icon-dark {
+  display: inline;
 }
