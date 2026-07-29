@@ -60,6 +60,45 @@ body, .main {
   border-right: 1px solid var(--tw-border);
 }
 
+// ===== 사이트 헤더(제목) / 검색바 / 상단바 =====
+.site-header,
+.site-title {
+  background-color: var(--tw-bg-side) !important;
+  color: var(--tw-heading) !important;
+  border-color: var(--tw-border) !important;
+}
+
+.site-nav {
+  background-color: var(--tw-bg-side) !important;
+}
+
+.main-header {
+  background-color: var(--tw-bg) !important;
+  border-color: var(--tw-border) !important;
+}
+
+.search-input-wrap,
+.search-input {
+  background-color: var(--tw-bg-side) !important;
+  color: var(--tw-text) !important;
+}
+
+.search-input::placeholder {
+  color: var(--tw-text);
+  opacity: 0.6;
+}
+
+// ===== 사이드바 선택된(active) 항목 =====
+.nav-list .nav-list-link.active,
+.nav-list .nav-list-item > .nav-list-link.active {
+  background-color: var(--tw-accent) !important;
+  color: var(--tw-accent-contrast) !important;
+}
+
+.nav-list .nav-list-expander svg {
+  color: var(--tw-text);
+}
+
 .main-content, .main-content p, .main-content li {
   color: var(--tw-text) !important;
 }
