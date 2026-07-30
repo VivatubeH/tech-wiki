@@ -25,3 +25,6 @@ IT 전반 지식 정리 위키 — 네트워크, 시스템, 보안, 개발, AI �
 ## 진행 기록
 
 - `progress-log.md`: 학습 진행 상황 기록
+
+## 깃허브 페이지 링크
+https://vivatubeh.github.io/tech-wiki/
