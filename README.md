@@ -21,6 +21,8 @@ IT 전반 지식 정리 위키 — 네트워크, 시스템, 보안, 개발, AI �
 | `11-html-css-js` | HTML/CSS/JS |
 | `12-java-spring` | Java / Spring / SpringBoot |
 | `13-sql` | SQL |
+| `14-cicd` | CI/CD |
+| `certifications` | 자격증 (AWS SAA / CCNA / RHCSA) |
 
 ## 진행 기록
 
